@@ -8,15 +8,15 @@ module.exports = async function () {
     useYarn: true,
     scenarios: [
       {
-        name: 'ember-lts-3.24',
+        name: 'ember-3.25',
         npm: {
           devDependencies: {
-            'ember-source': '~3.24.3',
+            'ember-source': '~3.25.0',
           },
         },
       },
       {
-        name: 'ember-lts-3.28',
+        name: 'ember-3.28-lts',
         npm: {
           devDependencies: {
             'ember-source': '~3.28.0',
@@ -34,47 +34,32 @@ module.exports = async function () {
       {
         name: 'ember-beta',
         npm: {
+          dependencies: {
+            'ember-auto-import': '^2.0.0',
+          },
           devDependencies: {
             'ember-source': await getChannelURL('beta'),
+            webpack: '^5.0.0',
           },
         },
       },
       {
         name: 'ember-canary',
         npm: {
+          dependencies: {
+            'ember-auto-import': '^2.0.0',
+          },
           devDependencies: {
             'ember-source': await getChannelURL('canary'),
+            webpack: '^5.0.0',
           },
         },
       },
       {
-        name: 'ember-default-with-jquery',
-        env: {
-          EMBER_OPTIONAL_FEATURES: JSON.stringify({
-            'jquery-integration': true,
-          }),
-        },
+        name: 'ember-could-get-used-to-this',
         npm: {
           devDependencies: {
-            '@ember/jquery': '^1.1.0',
-          },
-        },
-      },
-      {
-        name: 'ember-classic',
-        env: {
-          EMBER_OPTIONAL_FEATURES: JSON.stringify({
-            'application-template-wrapper': true,
-            'default-async-observers': false,
-            'template-only-glimmer-components': false,
-          }),
-        },
-        npm: {
-          devDependencies: {
-            'ember-source': '~3.28.0',
-          },
-          ember: {
-            edition: 'classic',
+            'ember-could-get-used-to-this': '^1.0.1',
           },
         },
       },

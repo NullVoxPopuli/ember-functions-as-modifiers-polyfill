@@ -14,10 +14,6 @@ on:
 env:
   CI: true
 
-concurrency:
-   group: ci-${{ github.head_ref || github.ref }}
-   cancel-in-progress: true
-
 jobs:
   source:
     name: Source

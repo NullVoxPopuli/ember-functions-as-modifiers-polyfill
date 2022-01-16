@@ -47,7 +47,6 @@ export default class MyComponent extends Component {
 ```
 ```hbs
 <div {{this.myModifier 3}}>
-^ prints 6 when clicked
 ```
 
 Named arguments will all be grouped together in the last argument of the helper:

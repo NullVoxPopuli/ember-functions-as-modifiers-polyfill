@@ -38,12 +38,13 @@ import Component  from '@glimmer/component';
 
 export default class MyComponent extends Component {
   myModifier = (element, x) => {
-    let handler = () => console.log(x);
+    let handler = () => console.log(x); // -> 3
 
     element.addEventListener('click', handler);
 
     return () => element.removeEventListener('click', handler);
   }
+}
 ```
 ```hbs
 <div {{this.myModifier 3}}>
@@ -56,7 +57,7 @@ import Component  from '@glimmer/component';
 
 export default class MyComponent extends Component {
   doStuff = (element, x, options) => {
-    let handler = () => console.log(x, options.optionA, options.optionB);
+    let handler = () => console.log(x, options.optionA, options.optionB); // -> 3 2 3
 
     element.addEventListener('click', handler);
 

@@ -32,8 +32,8 @@
     "ember-cli-typescript": "^4.2.1"
   },
   "devDependencies": {
-    "@commitlint/cli": "^18.0.0",
-    "@commitlint/config-conventional": "^18.0.0",
+    "@commitlint/cli": "^19.0.0",
+    "@commitlint/config-conventional": "^19.0.0",
     "@ember/optional-features": "^2.0.0",
     "@ember/test-helpers": "^3.0.0",
     "@embroider/test-setup": "^3.0.0",
@@ -42,8 +42,8 @@
     "@nullvoxpopuli/eslint-configs": "^3.0.0",
     "@semantic-release/changelog": "^6.0.1",
     "@semantic-release/git": "^10.0.1",
-    "@types/ember-qunit": "^5.0.0",
-    "@types/ember-resolver": "^5.0.10",
+    "@types/ember-qunit": "^6.0.0",
+    "@types/ember-resolver": "^9.0.0",
     "@types/ember__application": "^4.0.0",
     "@types/ember__array": "^4.0.1",
     "@types/ember__component": "^4.0.2",

@@ -32,8 +32,8 @@
     "ember-cli-typescript": "^4.2.1"
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.0.0",
-    "@commitlint/config-conventional": "^19.0.0",
+    "@commitlint/cli": "^20.0.0",
+    "@commitlint/config-conventional": "^20.0.0",
     "@ember/optional-features": "^2.0.0",
     "@ember/test-helpers": "^5.0.0",
     "@embroider/test-setup": "^4.0.0",
@@ -69,7 +69,7 @@
     "ember-auto-import": "^2.4.0",
     "ember-cli": "~6.3.0",
     "ember-cli-dependency-checker": "^3.2.0",
-    "ember-cli-htmlbars": "^6.0.1",
+    "ember-cli-htmlbars": "^7.0.0",
     "ember-cli-inject-live-reload": "^2.1.0",
     "ember-cli-sri": "^2.1.1",
     "ember-cli-terser": "^4.0.2",
@@ -95,7 +95,7 @@
     "prettier": "^3.0.0",
     "qunit": "^2.17.2",
     "qunit-dom": "^3.0.0",
-    "semantic-release": "^24.0.0",
+    "semantic-release": "^25.0.0",
     "typescript": "^5.0.0",
     "webpack": "^5.67.0"
   },

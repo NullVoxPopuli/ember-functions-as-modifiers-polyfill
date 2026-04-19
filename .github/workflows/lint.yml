@@ -21,7 +21,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v6
-      - uses: volta-cli/action@v4
+      - uses: volta-cli/action@v5
 
       - run: yarn install --frozen-lockfile
 
@@ -37,7 +37,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v6
-      - uses: volta-cli/action@v4
+      - uses: volta-cli/action@v5
       - uses: actions/cache@v5
         with:
           path: '**/node_modules'
@@ -84,5 +84,5 @@ jobs:
       with:
         fetch-depth: 0
 
-    - uses: volta-cli/action@v4
+    - uses: volta-cli/action@v5
     - uses: wagoid/commitlint-github-action@v6.2.1
